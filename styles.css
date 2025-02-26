@@ -1,0 +1,86 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+body {
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    background: url('shivratri-bg.jpg') no-repeat center center/cover;
+    color: rgb(229, 223, 223);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Sections */
+section {
+    padding: 40px;
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Typing Effect */
+#typed-text, #yes-typed-text, #promises-typed-text {
+    font-size: 22px;
+    white-space: pre-wrap;
+    overflow: hidden;
+    display: inline-block;
+    border-right: 3px solid #ffcc00;
+    animation: typing 4s steps(40) forwards, blink 0.7s infinite;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(45deg, #ff9800, #e91e63);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #e91e63, #ff9800);
+}
+
+/* Yes and No Buttons */
+.yes-btn {
+    background: linear-gradient(45deg, #00c853, #1e88e5);
+}
+
+.no-btn {
+    background: linear-gradient(45deg, #ff1744, #d50000);
+}
+
+/* Typing Animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Show First Section */
+#landing {
+    display: block;
+}

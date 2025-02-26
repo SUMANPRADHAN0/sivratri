@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahashivratri Proposal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="shivratri-music.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="container">
+        <!-- Landing Page -->
+        <section id="landing">
+            <h1>✨ Happy Mahashivratri, My Love ✨</h1>
+            <p>May Mahadev & Maa Parvati bless our bond forever.</p>
+            <button onclick="startExperience()">💖 Proceed 💖</button>
+        </section>
+
+        <!-- Typing Effect Sections -->
+        <section id="typing-section" class="hidden">
+            <p id="typed-text"></p>
+        </section>
+
+        <!-- Proposal Section -->
+        <section id="proposal" class="hidden">
+            <h2>Will you be my Parvati, and let me be your Shiva? ❤️</h2>
+            <button class="yes-btn" onclick="showYesMessage()">Yes ❤️</button>
+            <button class="no-btn" onclick="hideNoButton()">No ❌</button>
+        </section>
+
+        <!-- Yes Message Section -->
+        <section id="yesMessage" class="hidden">
+            <p id="yes-typed-text"></p>
+        </section>
+
+        <!-- Promise Section -->
+        <section id="promises" class="hidden">
+            <p id="promises-typed-text"></p>
+        </section>
+
+        <!-- Mahashivratri Wishes -->
+        <section id="shivratri-wish" class="hidden">
+            <h2>✨ Happy Mahashivratri! ✨</h2>
+            <p>May Lord Shiva & Goddess Parvati bless our bond with eternal love! ❤️</p>
+        </section>
+    </div>
+</body>
+</html>
